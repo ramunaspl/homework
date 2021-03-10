@@ -1,1 +1,78 @@
 @import "custom";
+
+body {
+    background: url("./assets/images/background.jpg");
+}
+
+.maincontainer {
+    background-color: white;
+    min-height: 100vh;
+
+}
+
+.searchbar {
+    height: 120px;
+    background-image: linear-gradient(to right, #ff7e22, #ff2300);
+}
+
+
+$primary-color: rgb(255, 255, 255);
+
+.movie-svg {
+    filter: invert(100%);
+    height: 30px;
+    left: 40px;
+    position: relative;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 2px;
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 50px;
+    margin: 0;
+    outline: none;
+    padding: 0 50px 0;
+    width: 90%;
+
+    &::placeholder {
+        color: $primary-color;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    &:focus {
+        background-color: $primary-color;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &:focus::placeholder {
+        color: rgb(133, 133, 133);
+        opacity: 1;
+    }
+}
+
+button {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    margin-left: 5px;
+    outline: none;
+    padding: 0;
+    position: relative;
+    // right: 50px;
+    width: 50px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(241, 241, 241);
+    }
+}
+
+
